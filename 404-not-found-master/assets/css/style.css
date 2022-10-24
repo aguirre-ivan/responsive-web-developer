@@ -75,7 +75,8 @@ header h1 {
 footer {
     display: flex;
     justify-content: center;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
+
 }
 
 footer p {
@@ -91,4 +92,31 @@ footer p {
 footer a {
     font-weight: 700;
     color: #BDBDBD;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 180px;
+    }
+
+    .error-img img {
+        height: 414.2492370605469px;
+        width: 539.2236938476562px;
+        left: 77px;
+        top: 265px;
+        border-radius: 0px;
+    }
+
+    .error-info {
+        margin: 0px 119px 0px 118.78px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
 }
