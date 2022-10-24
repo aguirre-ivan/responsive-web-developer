@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    color: #333333;
+    font-family: Inconsolata;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    margin: 20px 24px;
+}
+
+.error-img img {
+    height: 220.35203552246094px;
+    width: 286.829833984375px;
+    left: 44px;
+    margin-bottom: 30px;
+}
+
+.content {
+    font-family: Space Mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin-bottom: 114px;
+}
+
+.error-info {
+    color: #333333;
+    font-family: Space Mono;
+}
+
+.error-info__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    margin-bottom: 30px;
+}
+
+.error-info__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    margin-bottom: 66px;
+}
+
+.backpage-button {
+    background-color: #333333;
+    height: 68px;
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backpage-button a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+
+}
+
+footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #BDBDBD;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 180px;
+    }
+
+    .error-img img {
+        height: 414.2492370605469px;
+        width: 539.2236938476562px;
+        left: 77px;
+        top: 265px;
+        border-radius: 0px;
+    }
+
+    .error-info {
+        margin: 0px 119px 0px 118.78px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
