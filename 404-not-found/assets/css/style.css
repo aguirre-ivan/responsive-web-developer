@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 header h1 {
     color: #333333;
     font-family: Inconsolata;
@@ -14,14 +19,17 @@ header h1 {
     font-weight: 700;
     line-height: 25px;
     letter-spacing: -0.08em;
-    margin: 20px 24px;
+    padding: 20px 24px;
+    margin-bottom: 44px;
+}
+
+.error-img {
+    margin-bottom: 60px;
 }
 
 .error-img img {
     height: 220.35203552246094px;
     width: 286.829833984375px;
-    left: 44px;
-    margin-bottom: 30px;
 }
 
 .content {
@@ -29,13 +37,12 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
-    margin-bottom: 114px;
 }
 
 .error-info {
     color: #333333;
     font-family: Space Mono;
+    padding: 0 24px;
 }
 
 .error-info__title {
@@ -61,6 +68,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 90px;
 }
 
 .backpage-button a {
@@ -75,8 +83,7 @@ header h1 {
 footer {
     display: flex;
     justify-content: center;
-    padding-bottom: 25px;
-
+    padding: 24px 0;
 }
 
 footer p {
@@ -95,28 +102,41 @@ footer a {
 }
 
 @media only screen and (min-width: 1200px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
     .content {
         flex-direction: row;
         justify-content: center;
-        margin-top: 180px;
+    }
+
+    .error-info {
+        max-width: 586px;
+        padding: 0;
+        margin: 0px 119px;
+    }
+
+    .error-info__title {
+        max-width: 586px;
+        font-family: Space Mono;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 95px;
+        text-align: left;
+    }
+
+    .error-info__text {
+        max-width: 381px;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
     }
 
     .error-img img {
         height: 414.2492370605469px;
         width: 539.2236938476562px;
-        left: 77px;
-        top: 265px;
-        border-radius: 0px;
-    }
-
-    .error-info {
-        margin: 0px 119px 0px 118.78px;
-    }
-
-    footer {
-        position: absolute;
-        width: 100%;
-        bottom: 0px;
-        margin-bottom: 0px;
     }
 }
