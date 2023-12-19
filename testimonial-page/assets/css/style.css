@@ -8,9 +8,16 @@
 
 body {
   width: 100%;
-  overflow: hidden;
   background-color: #FAFAF9;
-  background-color: red;
+  padding: 80px 25px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+  }
 }
 
 .section {
@@ -19,74 +26,117 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  padding: 0 30px;
+  gap: 80px;
 }
 @media screen and (min-width: 768px) {
   .section {
     flex-direction: row;
   }
 }
-
-.minimal-blog-card {
+.section .reviewers {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 15px;
-  width: 368px;
-  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
-  transition: all 0.3s ease-in-out;
+  gap: 15px;
 }
-.minimal-blog-card:hover {
-  transition: all 0.3s ease-in-out;
-  transform: translate(0, -2px);
+.section .reviewers__icon {
+  background-color: #F5C044;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
 }
-.minimal-blog-card__header {
-  overflow: hidden;
-  padding: 16px;
+.section .reviewers__title {
+  font-size: 36px;
+  color: #18181B;
 }
-.minimal-blog-card__header img {
-  border-radius: 15px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.section .reviewers__body {
+  font-size: 20px;
+  color: #52525A;
 }
-.minimal-blog-card__body {
+.section .reviewers__checklist {
+  color: #52525A;
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
-  border-bottom: solid 0.1px #E6E6E6;
+  gap: 20px;
+  padding: 20px 0;
 }
-.minimal-blog-card__body .tag {
-  margin-bottom: 16px;
+.section .reviewers__checklist li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.minimal-blog-card__body .tag .pill {
-  color: #883AE1;
-  background-color: #E6D6FC;
+.section .reviewers__checklist li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
   display: inline-block;
-  padding: 6px 16px;
-  border-radius: 15px;
-  font-size: 10px;
-  font-weight: bold;
+  background-image: url("../img/Done_ring_round_fill.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.minimal-blog-card__body .title {
-  margin-bottom: 6px;
-  color: #20293A;
+.section .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
 }
-.minimal-blog-card__body .title * {
-  font-size: 18px;
+.section .reviews .review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 365px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 30px 30px #FAFAF9;
 }
-.minimal-blog-card__body .description {
-  margin-bottom: 20px;
-  color: #6C727F;
+@media screen and (min-width: 640px) {
+  .section .reviews .review-card:first-child {
+    align-self: flex-end;
+  }
+  .section .reviews .review-card:last-child {
+    align-self: flex-start;
+  }
 }
-.minimal-blog-card__body .description * {
-  font-size: 14px;
+.section .reviews .review-card__title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-.minimal-blog-card__footer {
-  padding: 20px 16px;
-  color: #6C727F;
+.section .reviews .review-card__title img {
+  height: 30px;
 }
-.minimal-blog-card__footer .author * {
-  font-size: 12px;
+.section .reviews .review-card__title ul.stars {
+  display: flex;
+  gap: 10px;
+}
+.section .reviews .review-card__title ul.stars li {
+  list-style: none;
+}
+.section .reviews .review-card__title ul.stars li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section .reviews .review-card__title ul.stars li.fill-star:before {
+  background-image: url("../img/Star_fill.svg");
+}
+.section .reviews .review-card__title ul.stars li.empty-star:before {
+  background-image: url("../img/Star_fill_gray.svg");
+}
+.section .reviews .review-card__author {
+  font-size: 16px;
+  color: #18181B;
+}
+.section .reviews .review-card__body {
+  font-size: 16px;
+  color: #52525A;
 }/*# sourceMappingURL=style.css.map */
