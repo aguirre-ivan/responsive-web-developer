@@ -10,6 +10,7 @@ body {
   width: 100%;
   background-color: #FAFAF9;
   padding: 80px 25px;
+  height: 100vh;
 }
 @media screen and (min-width: 768px) {
   body {
