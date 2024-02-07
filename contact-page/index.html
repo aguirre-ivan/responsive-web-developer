@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="navbar-brand">
+                <img src="./assets/img/contact-form-icon.svg"/>
+            </a>
+        </nav>
+    </header>
+    <div class="form-header">
+        <h2>Interested in our business pricing?</h2>
+        <p>Fill out the form to view details and we'll contact you as soon as possible.</p>
+    </div>
+    <div class="form-group">
+        <form>
+            <div class="form-group__info-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Ethan Johnson"/>
+                <label for="email">Company Email</label>
+                <input type="email" id="email" placeholder="ethan@johnson.com"/>
+                <label for="company-size">Company Size</label>
+                <select id="company-size">
+                    <option value="0">50-100 employees</option>
+                    <option value="1">100-500 employees</option>
+                </select>
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option value="0">Building Landing pages</option>
+                    <option value="1">Building apps</option>
+                </select>
+            </div>
+            <div class="form-group__message-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type your message here">50-100 employees</textarea>
+            </div>
+            <div class="form-group__submit">
+                <button type="submit">Contact Sales</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
