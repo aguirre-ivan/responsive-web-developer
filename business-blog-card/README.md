@@ -4,6 +4,10 @@ This challenge is a great way to practice basic HTML and CSS skills. The challen
 
 <div align="center">
   <h3>
+    <a href="https://devchallenges.io/challenge/28">
+      Challenge
+    </a>
+    <span> | </span>
     <a href="https://aguirre-ivan.github.io/responsive-web-developer/business-blog-card/">
       Demo
     </a>

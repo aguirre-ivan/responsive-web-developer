@@ -5,6 +5,10 @@ This challenge is to practice more advanced HTML and CSS skills. The challenge i
 
 <div align="center">
   <h3>
+    <a href="https://devchallenges.io/challenge/29">
+      Challenge
+    </a>
+    <span> | </span>
     <a href="https://aguirre-ivan.github.io/responsive-web-developer/testimonial-page/">
       Demo
     </a>
