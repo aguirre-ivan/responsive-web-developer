@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Sora, sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+  width: 100%;
+  background-image: url("../img/bg-image.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  padding: 20px 50px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 0;
+}
+.form-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  width: 80%;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .form-header h2 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form-header h2 {
+    font-size: 4rem;
+    width: 60%;
+  }
+}
+.form-header p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FFFFFF;
+  width: 60%;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .form-header p {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form-header p {
+    font-size: 2rem;
+    width: 60%;
+  }
+}
+
+.form-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+}
+.form-body .form-group {
+  border-radius: 20px;
+  background-color: rgba(205, 213, 224, 0.2);
+  padding: 30px;
+  width: 90%;
+}
+@media screen and (min-width: 1280px) {
+  .form-body .form-group {
+    width: 60%;
+  }
+}
+.form-body .form-group .form-element {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-body .form-group .form-element input,
+.form-body .form-group .form-element select {
+  height: 70px;
+  border-radius: 15px;
+  padding: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.form-body .form-group .form-element select {
+  font-family: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  background-size: 1.5em;
+}
+.form-body .form-group .form-element label {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+.form-body .form-group__info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+@media screen and (min-width: 900px) {
+  .form-body .form-group__info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.form-body .form-group__message {
+  margin-top: 25px;
+}
+.form-body .form-group__message textarea {
+  color: #111729;
+  font-weight: bold;
+  height: 200px;
+  border-radius: 15px;
+  padding: 20px;
+  border: none;
+  font-size: 1rem;
+}
+.form-body .form-group__submit {
+  width: 100%;
+  margin-top: 25px;
+}
+.form-body .form-group__submit .form-element {
+  height: 70px;
+}
+.form-body .form-group__submit .form-element button {
+  font-size: 1.25rem;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+  color: #4036A9;
+  font-weight: bold;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
