@@ -6,7 +6,105 @@
   font-family: Poppins, sans-serif;
 }
 
-body {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+header nav {
+  display: flex;
+  align-items: column;
+  display: none;
+}
+header #color-mode {
+  display: none;
+}
+header #toggle-menu img {
+  width: 40px;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column-reverse;
   width: 100%;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.page-body__img {
+  width: 95%;
+}
+.page-body__img img {
+  width: 100%;
+}
+.page-body__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px;
+}
+.page-body__info h3 {
+  color: #223344;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.page-body__info h1 {
+  font-size: 3.75rem;
+  color: #223344;
+  font-weight: bold;
+  width: 80%;
+}
+.page-body__info p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #909193;
+  padding: 20px 0;
+}
+.page-body__info .btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-body__info .btn-container .btn-fill {
+  text-decoration: none;
+  background-color: #2A4DD0;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.page-body__info .btn-container .btn-fill:hover {
+  background-color: #fff;
+  color: #223344;
+}
+.page-body__info .btn-container .btn-light {
+  font-size: 1rem;
+  color: #2A4DD0;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.page-body__info .btn-container .btn-light:hover {
+  background-color: #2A4DD0;
+  color: #fff;
+}
+.page-body__info .check-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.page-body__info .check-container .check-element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */
