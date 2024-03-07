@@ -14,18 +14,65 @@ header {
     padding: 25px;
 
     nav {
-        display: flex;
-        align-items: column;
         display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        top: 0;
+        opacity: 0;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease;
+
+        &.show {
+            display: flex;
+            transition: opacity 0.5s ease;
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            list-style: none;
+
+            @media screen and (min-width: 600px) {
+                display: flex;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #223344;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: #2A4DD0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
     }
 
     #color-mode {
         display: none;
     }
 
-    #toggle-menu {
+    #toggleMenu {
+        border: none;
+        position: absolute;
+        right: 25px;
+
         img {
             width: 40px;
+        }
+
+        .close-icon {
+            display: none;
         }
     }
 }

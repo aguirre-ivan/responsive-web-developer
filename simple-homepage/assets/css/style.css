@@ -13,15 +13,57 @@ header {
   padding: 25px;
 }
 header nav {
-  display: flex;
-  align-items: column;
   display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+header nav.show {
+  display: flex;
+  transition: opacity 0.5s ease;
+}
+header nav ul {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  list-style: none;
+}
+@media screen and (min-width: 600px) {
+  header nav ul {
+    display: flex;
+  }
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #223344;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #2A4DD0;
+  text-decoration: underline;
 }
 header #color-mode {
   display: none;
 }
-header #toggle-menu img {
+header #toggleMenu {
+  border: none;
+  position: absolute;
+  right: 25px;
+}
+header #toggleMenu img {
   width: 40px;
+}
+header #toggleMenu .close-icon {
+  display: none;
 }
 
 .page-body {
