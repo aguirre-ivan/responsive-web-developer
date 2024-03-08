@@ -6,6 +6,10 @@
   font-family: Poppins, sans-serif;
 }
 
+body {
+  background-color: #F2F9FE;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -19,6 +23,7 @@ header nav {
   width: 100vw;
   background-color: white;
   top: 0;
+  left: 0;
   opacity: 0;
   align-items: center;
   justify-content: center;
@@ -28,6 +33,18 @@ header nav.show {
   display: flex;
   transition: opacity 0.5s ease;
 }
+header nav.show ul {
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  header nav {
+    display: flex;
+    width: unset;
+    height: unset;
+    position: relative;
+    opacity: 1;
+  }
+}
 header nav ul {
   display: none;
   flex-direction: column;
@@ -35,9 +52,10 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   header nav ul {
     display: flex;
+    flex-direction: row;
   }
 }
 header nav ul li a {
@@ -47,23 +65,56 @@ header nav ul li a {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+@media screen and (min-width: 1024px) {
+  header nav ul li a {
+    font-size: 1.3rem;
+  }
+}
 header nav ul li a:hover {
-  color: #2A4DD0;
+  color: #613f6b;
   text-decoration: underline;
 }
 header #color-mode {
-  display: none;
+  display: flex;
+  cursor: pointer;
+}
+header #color-mode .color-mode-pill {
+  display: flex;
+  border-radius: 50% 0 0 50%;
+  background-color: #111729;
+  padding: 3px;
+}
+header #color-mode .color-mode-pill:last-child {
+  border-radius: 0 50% 50% 0;
+}
+header #color-mode .color-mode-pill .night-mode {
+  display: flex;
+  border-radius: 50%;
+  background-color: #111729;
+}
+header #color-mode .color-mode-pill .light-mode {
+  display: flex;
+  border-radius: 50%;
+  background-color: #F2F9FE;
 }
 header #toggleMenu {
   border: none;
   position: absolute;
   right: 25px;
+  background-color: #F2F9FE;
 }
 header #toggleMenu img {
   width: 40px;
+  background-color: #F2F9FE;
+  cursor: pointer;
 }
 header #toggleMenu .close-icon {
   display: none;
+}
+@media screen and (min-width: 1024px) {
+  header #toggleMenu {
+    display: none;
+  }
 }
 
 .page-body {

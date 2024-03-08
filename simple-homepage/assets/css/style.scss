@@ -7,6 +7,10 @@
     font-family: Poppins, sans-serif;
 }
 
+body {
+    background-color: #F2F9FE;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -20,6 +24,7 @@ header {
         width: 100vw;
         background-color: white;
         top: 0;
+        left: 0;
         opacity: 0;
         align-items: center;
         justify-content: center;
@@ -28,6 +33,18 @@ header {
         &.show {
             display: flex;
             transition: opacity 0.5s ease;
+
+            ul {
+                display: flex;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            width: unset;
+            height: unset;
+            position: relative;
+            opacity: 1;
         }
 
         ul {
@@ -37,8 +54,9 @@ header {
             align-items: center;
             list-style: none;
 
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: 1024px) {
                 display: flex;
+                flex-direction: row;
             }
 
             li {
@@ -49,8 +67,12 @@ header {
                     font-weight: bold;
                     transition: all 0.3s ease;
 
+                    @media screen and (min-width: 1024px) {
+                        font-size: 1.3rem;
+                    }
+
                     &:hover {
-                        color: #2A4DD0;
+                        color: #613f6b;
                         text-decoration: underline;
                     }
                 }
@@ -59,19 +81,53 @@ header {
     }
 
     #color-mode {
-        display: none;
+        display: flex;
+        cursor: pointer;
+
+        .color-mode-pill {
+            display: flex;
+            border-radius: 50% 0 0 50%;
+            background-color: #111729;
+            padding: 3px;
+
+            &:last-child {
+                border-radius: 0 50% 50% 0;
+            }
+
+            .night-mode {
+                display: flex;
+                border-radius: 50%;
+                background-color: #111729;
+            }
+
+            .light-mode {
+                display: flex;
+                border-radius: 50%;
+                background-color: #F2F9FE;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+        }
     }
 
     #toggleMenu {
         border: none;
         position: absolute;
         right: 25px;
+        background-color: #F2F9FE;
 
         img {
             width: 40px;
+            background-color: #F2F9FE;
+            cursor: pointer;
         }
 
         .close-icon {
+            display: none;
+        }
+
+        @media screen and (min-width: 1024px) {
             display: none;
         }
     }
