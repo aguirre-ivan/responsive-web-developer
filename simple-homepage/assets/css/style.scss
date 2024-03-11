@@ -11,6 +11,10 @@ body {
     background-color: #F2F9FE;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -22,7 +26,7 @@ header {
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background-color: white;
+        background-color: #F2F9FE;
         top: 0;
         left: 0;
         opacity: 0;
@@ -33,6 +37,7 @@ header {
         &.show {
             display: flex;
             transition: opacity 0.5s ease;
+            background-color: #F2F9FE;
 
             ul {
                 display: flex;
@@ -80,9 +85,19 @@ header {
         }
     }
 
-    #color-mode {
-        display: flex;
+    #colorMode {
+        display: none;
         cursor: pointer;
+
+        &.show {
+            display: flex;
+            position: absolute;
+            top: 22px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+        }
 
         .color-mode-pill {
             display: flex;
@@ -107,8 +122,6 @@ header {
             }
         }
 
-        @media screen and (min-width: 1024px) {
-        }
     }
 
     #toggleMenu {
@@ -155,8 +168,12 @@ header {
         align-items: flex-start;
         justify-content: center;
         gap: 20px;
-        padding: 80px;
+        padding: 50px;
 
+        @media screen and (min-width: 550px) {
+            padding: 80px;
+        }
+        
         h3 {
             color: #223344;
             font-size: 1.125rem;
@@ -165,10 +182,14 @@ header {
         }
 
         h1 {
-            font-size: 3.75rem;
+            font-size: 2rem;
             color: #223344;
             font-weight: bold;
             width: 80%;
+
+            @media screen and (min-width: 550px) {
+                font-size: 3.75rem;
+            }
         }
 
         p {
@@ -181,7 +202,13 @@ header {
         .btn-container {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 25px;
+            flex-direction: column;
+
+            @media screen and (min-width: 550px) {
+                flex-direction: row;
+                gap: 10px;
+            }
 
             .btn-fill {
                 text-decoration: none;
@@ -220,7 +247,12 @@ header {
         .check-container {
             display: flex;
             align-items: center;
+            flex-direction: column;
             gap: 15px;
+
+            @media screen and (min-width: 550px) {
+                flex-direction: row;
+            }
 
             .check-element {
                 display: flex;

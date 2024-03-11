@@ -10,6 +10,10 @@ body {
   background-color: #F2F9FE;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -21,7 +25,7 @@ header nav {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: white;
+  background-color: #F2F9FE;
   top: 0;
   left: 0;
   opacity: 0;
@@ -32,6 +36,7 @@ header nav {
 header nav.show {
   display: flex;
   transition: opacity 0.5s ease;
+  background-color: #F2F9FE;
 }
 header nav.show ul {
   display: flex;
@@ -74,25 +79,35 @@ header nav ul li a:hover {
   color: #613f6b;
   text-decoration: underline;
 }
-header #color-mode {
-  display: flex;
+header #colorMode {
+  display: none;
   cursor: pointer;
 }
-header #color-mode .color-mode-pill {
+header #colorMode.show {
+  display: flex;
+  position: absolute;
+  top: 22px;
+}
+@media screen and (min-width: 1024px) {
+  header #colorMode {
+    display: flex;
+  }
+}
+header #colorMode .color-mode-pill {
   display: flex;
   border-radius: 50% 0 0 50%;
   background-color: #111729;
   padding: 3px;
 }
-header #color-mode .color-mode-pill:last-child {
+header #colorMode .color-mode-pill:last-child {
   border-radius: 0 50% 50% 0;
 }
-header #color-mode .color-mode-pill .night-mode {
+header #colorMode .color-mode-pill .night-mode {
   display: flex;
   border-radius: 50%;
   background-color: #111729;
 }
-header #color-mode .color-mode-pill .light-mode {
+header #colorMode .color-mode-pill .light-mode {
   display: flex;
   border-radius: 50%;
   background-color: #F2F9FE;
@@ -137,7 +152,12 @@ header #toggleMenu .close-icon {
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  padding: 80px;
+  padding: 50px;
+}
+@media screen and (min-width: 550px) {
+  .page-body__info {
+    padding: 80px;
+  }
 }
 .page-body__info h3 {
   color: #223344;
@@ -146,10 +166,15 @@ header #toggleMenu .close-icon {
   text-transform: uppercase;
 }
 .page-body__info h1 {
-  font-size: 3.75rem;
+  font-size: 2rem;
   color: #223344;
   font-weight: bold;
   width: 80%;
+}
+@media screen and (min-width: 550px) {
+  .page-body__info h1 {
+    font-size: 3.75rem;
+  }
 }
 .page-body__info p {
   font-size: 1.125rem;
@@ -160,7 +185,14 @@ header #toggleMenu .close-icon {
 .page-body__info .btn-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  flex-direction: column;
+}
+@media screen and (min-width: 550px) {
+  .page-body__info .btn-container {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 .page-body__info .btn-container .btn-fill {
   text-decoration: none;
@@ -194,7 +226,13 @@ header #toggleMenu .close-icon {
 .page-body__info .check-container {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 15px;
+}
+@media screen and (min-width: 550px) {
+  .page-body__info .check-container {
+    flex-direction: row;
+  }
 }
 .page-body__info .check-container .check-element {
   display: flex;
