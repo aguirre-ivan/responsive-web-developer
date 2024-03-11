@@ -1,2 +1,3 @@
-# devChallenges
-My solutions for devChallenges.
+# Old devChallenges
+
+My solutions for old devChallenges. These challenges aren't online anymore.
