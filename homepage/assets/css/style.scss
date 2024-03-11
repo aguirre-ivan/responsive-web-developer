@@ -38,7 +38,7 @@ header {
     }
 }
 
-.page {
+.challenges-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -50,7 +50,16 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-    
+
+        h2 {
+            font-size: 2.3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
         a {
             color: rgb(2 6 23);
         }
@@ -63,7 +72,6 @@ header {
         gap: 40px;
 
         .challenge {
-
             a {
                 img {
                     width: 100%;

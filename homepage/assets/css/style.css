@@ -32,28 +32,35 @@ header nav ul a:hover {
   color: #F0402C;
 }
 
-.page {
+.challenges-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
   padding: 50px;
 }
-.page__header {
+.challenges-container__header {
   color: rgb(2, 6, 23);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.page__header a {
+.challenges-container__header h2 {
+  font-size: 2.3rem;
+}
+.challenges-container__header p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.challenges-container__header a {
   color: rgb(2, 6, 23);
 }
-.page__body {
+.challenges-container__body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   gap: 40px;
 }
-.page__body .challenge a img {
+.challenges-container__body .challenge a img {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
