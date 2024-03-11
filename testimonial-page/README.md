@@ -4,7 +4,7 @@ This challenge is to practice more advanced HTML and CSS skills. The challenge i
 
 <div align="center">
   <h3>
-    <a href="https://devchallenges.io/challenge/29">
+    <a href="https://devchallenges.io/challenge/testimonial-page">
       Challenge
     </a>
     <span> | </span>

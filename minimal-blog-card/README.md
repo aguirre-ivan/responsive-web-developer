@@ -4,7 +4,7 @@ This challenge is a great way to start with basic HTML and CSS skills. The chall
 
 <div align="center">
   <h3>
-    <a href="https://devchallenges.io/challenge/27">
+    <a href="https://devchallenges.io/challenge/minimal-blog-card">
       Challenge
     </a>
     <span> | </span>
