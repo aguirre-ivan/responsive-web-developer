@@ -2,7 +2,6 @@
 
 This challenge is to practice more advanced HTML and CSS skills. The challenge is to create a simple testimonial page that challenges you to use grid, media queries, icons,...
 
-
 <div align="center">
   <h3>
     <a href="https://devchallenges.io/challenge/29">
