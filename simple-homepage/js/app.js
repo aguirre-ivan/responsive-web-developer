@@ -9,4 +9,8 @@ $(document).ready(function() {
             return $(this).css("opacity") === "0" ? "1" : "0";
         });
     });
+
+    $("#colorMode").click(function() {
+        $("body").toggleClass('dark-mode');
+    });
 });

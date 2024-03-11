@@ -21,6 +21,10 @@ header {
     justify-content: space-between;
     padding: 25px;
 
+    .site-branding-white {
+        display: none;
+    }
+
     nav {
         display: none;
         position: absolute;
@@ -260,5 +264,59 @@ header {
                 gap: 10px;
             }
         }
+    }
+}
+
+.dark-mode {
+    background-color: #111729;
+    color: #F2F9FE;
+
+    header {
+        background-color: #111729;
+
+        .site-branding {
+            display: none;
+        }
+
+        .site-branding-white {
+            display: block;
+        }
+
+        nav.show {
+            background-color: #111729;
+        }
+
+        ul {
+            background-color: #111729;
+
+            li a {
+                color: #F2F9FE;
+            }
+        }
+
+        #toggleMenu, #toggleMenu img {
+            background-color: #111729;
+        }
+    }
+
+    .page-body__info h3 {
+        color: #F2F9FE;
+    }
+
+    .page-body__info h1 {
+        color: #F2F9FE;
+    }
+
+    .page-body__info p {
+        color: #F2F9FE;
+    }
+
+    .page-body__info .btn-fill {
+        background-color: #F2F9FE;
+        color: #111729;
+    }
+
+    .page-body__info .btn-light {
+        color: #F2F9FE;
     }
 }

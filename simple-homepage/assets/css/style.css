@@ -20,6 +20,9 @@ header {
   justify-content: space-between;
   padding: 25px;
 }
+header .site-branding-white {
+  display: none;
+}
 header nav {
   display: none;
   position: absolute;
@@ -238,4 +241,46 @@ header #toggleMenu .close-icon {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.dark-mode {
+  background-color: #111729;
+  color: #F2F9FE;
+}
+.dark-mode header {
+  background-color: #111729;
+}
+.dark-mode header .site-branding {
+  display: none;
+}
+.dark-mode header .site-branding-white {
+  display: block;
+}
+.dark-mode header nav.show {
+  background-color: #111729;
+}
+.dark-mode header ul {
+  background-color: #111729;
+}
+.dark-mode header ul li a {
+  color: #F2F9FE;
+}
+.dark-mode header #toggleMenu, .dark-mode header #toggleMenu img {
+  background-color: #111729;
+}
+.dark-mode .page-body__info h3 {
+  color: #F2F9FE;
+}
+.dark-mode .page-body__info h1 {
+  color: #F2F9FE;
+}
+.dark-mode .page-body__info p {
+  color: #F2F9FE;
+}
+.dark-mode .page-body__info .btn-fill {
+  background-color: #F2F9FE;
+  color: #111729;
+}
+.dark-mode .page-body__info .btn-light {
+  color: #F2F9FE;
 }/*# sourceMappingURL=style.css.map */
