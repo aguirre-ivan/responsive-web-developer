@@ -23,8 +23,15 @@ header h1 {
     margin-bottom: 44px;
 }
 
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+
 .error-img {
     margin-bottom: 60px;
+    animation: move 2s infinite;
 }
 
 .error-img img {
@@ -63,7 +70,6 @@ header h1 {
 
 .backpage-button {
     background-color: #333333;
-    height: 68px;
     width: 216px;
     display: flex;
     align-items: center;
@@ -78,6 +84,20 @@ header h1 {
     line-height: 21px;
     letter-spacing: -0.035em;
     color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.backpage-button:hover {
+    background-color: #FFFFFF;
+}
+
+.backpage-button a:hover {
+    border: #333333 solid 2px;
+    color: #333333;
+    padding: 16px 0;
+    cursor: pointer;
 }
 
 footer {
