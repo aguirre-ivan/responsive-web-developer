@@ -32,14 +32,28 @@ header nav ul a:hover {
   color: #f1c40f;
 }
 
-.page-header {
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+.page__header {
   color: rgb(2, 6, 23);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 50px;
 }
-.page-header a {
+.page__header a {
   color: rgb(2, 6, 23);
+}
+.page__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+}
+.page__body .challenge a img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
