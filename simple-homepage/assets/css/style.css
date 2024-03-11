@@ -143,11 +143,25 @@ header #toggleMenu .close-icon {
   justify-content: center;
   gap: 100px;
 }
+@media screen and (min-width: 1280px) {
+  .page-body {
+    flex-direction: row;
+  }
+}
 .page-body__img {
   width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .page-body__img img {
   width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .page-body__img img {
+    height: 700px;
+    width: auto;
+  }
 }
 .page-body__info {
   display: flex;
@@ -238,6 +252,7 @@ header #toggleMenu .close-icon {
   }
 }
 .page-body__info .check-container .check-element {
+  font-size: 0.875rem;
   display: flex;
   align-items: center;
   gap: 10px;

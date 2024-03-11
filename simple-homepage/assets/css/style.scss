@@ -125,7 +125,6 @@ header {
                 background-color: #F2F9FE;
             }
         }
-
     }
 
     #toggleMenu {
@@ -158,11 +157,23 @@ header {
     justify-content: center;
     gap: 100px;
 
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+    }
+
     &__img {
         width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
             width: 100%;
+
+            @media screen and (min-width: 1280px) {
+                height: 700px;
+                width: auto;
+            }
         }
     }
 
@@ -259,6 +270,7 @@ header {
             }
 
             .check-element {
+                font-size: 0.875rem;
                 display: flex;
                 align-items: center;
                 gap: 10px;

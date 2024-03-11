@@ -4,7 +4,7 @@ This challenge is a great way to start using JS with HTML and CSS. The challenge
 
 <div align="center">
   <h3>
-    <a href="https://devchallenges.io/challenge/33">
+    <a href="https://devchallenges.io/challenge/simple-hompage-alarado">
       Challenge
     </a>
     <span> | </span>
@@ -12,7 +12,7 @@ This challenge is a great way to start using JS with HTML and CSS. The challenge
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solution/">
+    <a href="https://devchallenges.io/challenge/simple-hompage-alarado">
       Solution
     </a>
   </h3>
