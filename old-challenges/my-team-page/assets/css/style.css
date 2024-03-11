@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    margin-left: 12px;
+}
+
+header h1 {
+    font-family: PT Serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    text-align: left;
+}
+
+.team-info {
+    max-width: 335px;
+    margin-top: 38px;
+}
+
+.team-info h3 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.team-info p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.section-integrants {
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.integrant-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.integrant-card img {
+    width: 240px;
+}
+
+.integrant-card__profile h3 {
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.integrant-card__position {
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    margin-left: 6.5px;
+    font-family: PT Serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #BDBDBD;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+@media only screen and (min-width: 480px) {
+    header {
+        margin-left: 30px;
+    }
+
+    .section-integrants {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+        max-width: 600px;
+    }
+
+    .integrant-card:nth-child(even) {
+        padding-top: 100px;
+    }
+
+    .integrant-card img {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .team-info {
+        margin-top: 0px;
+        margin: 0 0 0 150px;
+    }
+
+    .section-integrants {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+    }
+
+    .integrant-card:nth-child(even) {
+        padding-top: 0px;
+    }
+
+    .integrant-card:nth-child(2) {
+        padding-top: 100px;
+    }
+
+    .integrant-card:nth-child(5) {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .team-info {
+        max-width: 440px;
+        margin-left: 250px;
+    }
+
+    .team-info p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .section-integrants {
+        max-width: 1200px;
+    }
+
+    .integrant-card__profile img {
+        width: 240px;
+    }
+
+    .integrant-card__profile h3 {
+        font-size: 22px;
+        line-height: 21px;
+    }
+}

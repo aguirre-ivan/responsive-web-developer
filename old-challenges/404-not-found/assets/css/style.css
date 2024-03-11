@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header h1 {
+    color: #333333;
+    font-family: Inconsolata;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    padding: 20px 24px;
+    margin-bottom: 44px;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+
+.error-img {
+    margin-bottom: 60px;
+    animation: move 2s infinite;
+}
+
+.error-img img {
+    height: 220.35203552246094px;
+    width: 286.829833984375px;
+}
+
+.content {
+    font-family: Space Mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-info {
+    color: #333333;
+    font-family: Space Mono;
+    padding: 0 24px;
+}
+
+.error-info__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    margin-bottom: 30px;
+}
+
+.error-info__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    margin-bottom: 66px;
+}
+
+.backpage-button {
+    background-color: #333333;
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.backpage-button a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.backpage-button:hover {
+    background-color: #FFFFFF;
+}
+
+.backpage-button a:hover {
+    border: #333333 solid 2px;
+    color: #333333;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #BDBDBD;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .error-info {
+        max-width: 586px;
+        padding: 0;
+        margin-left: 120px;
+    }
+
+    .error-info__title {
+        max-width: 586px;
+        font-family: Space Mono;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 95px;
+        text-align: left;
+    }
+
+    .error-info__text {
+        max-width: 381px;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .error-img img {
+        height: 414.2492370605469px;
+        width: 539.2236938476562px;
+    }
+}
