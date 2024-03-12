@@ -102,6 +102,7 @@ header nav ul a:hover {
   flex-direction: column;
   gap: 10px;
   text-decoration: none;
+  color: rgb(2, 6, 23);
 }
 .challenges-container__body .challenge a:visited {
   color: inherit;
