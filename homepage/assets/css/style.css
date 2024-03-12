@@ -124,4 +124,31 @@ header nav ul a:hover {
 }
 .challenges-container__body .challenge a p {
   padding: 0 5px;
+}
+
+footer {
+  background-color: rgb(2, 6, 23);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+footer ul a:hover {
+  color: #F0402C;
 }/*# sourceMappingURL=style.css.map */
