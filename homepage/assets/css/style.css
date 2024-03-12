@@ -125,6 +125,12 @@ header nav ul a:hover {
 .challenges-container__body .challenge a p {
   padding: 0 5px;
 }
+.challenges-container__body.old-challenges img {
+  height: 360px;
+  width: 540px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 footer {
   background-color: rgb(2, 6, 23);

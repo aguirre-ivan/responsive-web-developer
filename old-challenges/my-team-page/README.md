@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://aguirre-ivan.github.io/responsive-web-developer/my-team-page">
+    <a href="https://aguirre-ivan.github.io/responsive-web-developer/old-challenges/my-team-page">
       Demo
     </a>
   </h3>

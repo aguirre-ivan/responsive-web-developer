@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://aguirre-ivan.github.io/responsive-web-developer/404-not-found/">
+    <a href="https://aguirre-ivan.github.io/responsive-web-developer/old-challenges/404-not-found/">
       Demo
     </a>
   </h3>
