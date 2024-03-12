@@ -53,6 +53,7 @@ header {
 
         h2 {
             font-size: 2.3rem;
+            text-align: center;
         }
 
         p {
@@ -67,14 +68,74 @@ header {
 
     &__body {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        place-items: center;
         width: 100%;
-        gap: 40px;
+        gap: 50px;
+
+        @media screen and (min-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (min-width: 1367px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0 100px;
+            gap: 20px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            padding: 0 200px;
+        }
 
         .challenge {
+            padding: 8px;
+            height: 100%;
+
+            &:hover {
+                border: 3px solid rgb(59, 131, 246);
+                border-radius: 0.75rem;
+                padding: 5px;
+            }    
+
             a {
+                height: 100%;
+                border: 0px solid #e5e7eb;
+                border-width: 0.5px;
+                border-color: rgba(203,213,225, 0.9);
+                box-shadow: 0 52px 52px -38px rgba(100,116,139, .08);
+                border-radius: 0.75rem;
+                padding: 8px;
+                max-width: 560px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-decoration: none;
+
+                &:visited {
+                    color: inherit;
+                }
+
                 img {
+                    border-radius: 0.5rem;
                     width: 100%;
+                }
+
+                .challenge__title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 5px;
+    
+                    .square {
+                        background: rgb(168, 85, 247);
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+                }
+                
+                p {
+                    padding: 0 5px;
                 }
             }
         }
