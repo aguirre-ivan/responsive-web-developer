@@ -13,6 +13,7 @@ body {
     background-image: url('../img/bg-image.svg');
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 header {
@@ -150,6 +151,12 @@ header {
                     color: #4036A9;
                     font-weight: bold;
                     background-color: #FFFFFF;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #4036A9;
+                        color: #FFFFFF;
+                    }
                 }
             }
 
